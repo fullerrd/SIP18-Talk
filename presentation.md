@@ -54,6 +54,32 @@ It tries to call the ::: method on the result of the foreach call, which is of t
 
 ## Modularize implicitConversions
 
+# What functionality does implicitConversions provide?
+
+    class StringRepeated(original: String){
+    def *(times: Int) = {
+     def multiply(times: Int, accumulated: String): String = {
+       if(times > 1) multiply(times - 1, accumulated + original)
+       else original + accumulated
+     }
+     multiply(times, "")
+    }
+    }
+
+Line 2 defines the '*' method for the class StringRepeated. Now we can multiply strings with the cunning use of Implicit Conversions!
+
+    val repeated = (new StringRepeated("nice")) * 3
+    // == "nicenicenice"    
+
+Pretty cool right?
+
+[3]
+
+## Modularize implicitConversions
+
+# Why should implicitConversions be modular?
+
+
 
 ## Modularize higherKinds
 
