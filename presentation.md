@@ -64,13 +64,13 @@ By Jan McSparen and Dominic Fuller-Rowell
     object experimental {
       implicit val macros: macros = _
     }  
-  }
+    }
 
 ## Specification: What it looks like (3)
- * The types in the languageFeature object are called feature flags
-  * Each controls a set of features in Scala
+ * The types in the languageFeature object are called feature flags. Each flag controls a set of features in Scala
  * To enable a feature an implicit value of the feature type must be available.  
  * This occurs with a named import from the language object:
+ * For Example:
 
     import language.experimental.macros  
   or  
