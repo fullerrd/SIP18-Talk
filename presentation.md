@@ -16,7 +16,7 @@ By Jan McSparen and Dominic Fuller-Rowell
  * All language features in Scala are available in any environment
   * Not all Scala programmers need to make use of every tool to create libraries
   * People are prone to misuse features they don't fully understand
-  * Features that aren't needed for a given problem may interact in unforseen ways and cause cryptic/unhelpful error messages
+  * Features that aren't needed for a given problem may interact with necessary ones and cause cryptic/unhelpful error messages
 
 ## Modularize postfixOps
 
