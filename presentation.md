@@ -8,14 +8,15 @@ By Jan McSparen and Dominic Fuller-Rowell
   * SIP 18 deals with modularizing language features to ensure long term viability of the language
 
 ## Motivation for SIP 18
-  * Proposal adresses two potential problems that arise due to shifting user base:
+  * Proposal adresses two potential problems related to creating high-level languages and DSLs that arise due to shifting user base:
    * Making Scala easier for new programmers to learn and use
    * Preventing language features from interacting in unforseen ways (especially as new ones are added over time)
 
 ## How it is now
  * All language features in Scala are available in any environment
+  * Not all Scala programmers need to make use of every tool to create libraries
   * People are prone to misuse features they don't fully understand
-  * 
+  * Features that aren't needed for a given problem may interact in unforseen ways and cause cryptic/unhelpful error messages
 
 ## Modularize postfixOps
 
