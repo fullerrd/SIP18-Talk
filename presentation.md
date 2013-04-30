@@ -4,13 +4,13 @@ By Jan McSparen and Dominic Fuller-Rowell
 
 ## Overview
   * Changes to Scala occur via Scala Improvement Process (SIPs)
-  * SIP 18 deals deals with modularizing languge features
+  * Scala is shifting from a more esoteric language, to a mainstream one 
+  * SIP 18 deals with modularizing language features to ensure long term viability of the language
 
 ## Motivation for SIP 18
-  * Scala is shifting from a more esoteric language, to a mainstream one
-  * This proposal adresses two potential problems that arise due to this shift
-  * Making Scala easier for new programmers to learn and use
-  * Preventing language features from interacting in unforseen ways
+  * Proposal adresses two potential problems that arise due to shifting user base:
+   * Making Scala easier for new programmers to learn and use
+   * Preventing language features from interacting in unforseen ways (especially as new ones are added over time)
 
 ## Modularize postfixOps
 
