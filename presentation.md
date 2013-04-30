@@ -130,8 +130,6 @@ It tries to call the ::: method on the result of the foreach call, which is of t
      multiply(times, "")
     }
     }
-
-
     val repeated = (new StringRepeated("nice")) * 3
     // == "nicenicenice"    
 
