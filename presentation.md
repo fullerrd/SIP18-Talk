@@ -2,6 +2,9 @@
 
 By Jan McSparen and Dominic Fuller-Rowell
 
+##Overview
+  *Changes to Scala occur via Scala Improvement Process (SIPs)
+  *SIP 18 deals deals with modularizing languge features
 
 ## Modularize postfixOps
 
