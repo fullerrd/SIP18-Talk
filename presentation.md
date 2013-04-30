@@ -173,6 +173,22 @@ Pretty cool right?
 * These consepts tend to puzzle new-comers
 
 # Modularize existentials
+```def doStuff(arg : Array[T forSome { type T <: Foo }]) = stuff; ```
+
+* This uses Scala's existential types to specify that there's an unknown type for which this holds true. 
+* This is also possible in Java using wildcards
+```def doStuff(arg : Array[T forSome { type T <: Comparable[T]}]) = stuff;```
+* You can express more complicated type relationships than in Java (using wildcards).
+*  “Existential types [are] … allowed in inferred types of values or return types of methods.”
+
+[7]
+# Modularize existentials
+## Why should existentials be modular?
+* Complex existential types can easily produce type errors.
+* This is due to the abstract nature of existential typing.
+* Misuse of existential types can result in “obscure error messages. Therefore, going overboard with existential types is generally perceived not to be a good idea.”
+* In fact, they can be so problematic that they might not be included in a future release.
+
 
 # SIP 18: Looking to the Future
   * This SIP is important to the long term viablilty of Scala
@@ -188,5 +204,6 @@ Pretty cool right?
 * [4] https://groups.google.com/forum/#!msg/scala-language/PV4q6O1qIh8/yG4p8PA2Jf8J
 * [5] http://comments.gmane.org/gmane.comp.lang.scala.sips/472
 * [6] http://stackoverflow.com/questions/6246719/what-is-a-higher-kinded-type-in-scala
+* [7] http://unenterprise.blogspot.com/2008/01/variance-of-type-parameters-in-scala.html
 
 
