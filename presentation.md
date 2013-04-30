@@ -10,11 +10,12 @@ By Jan McSparen and Dominic Fuller-Rowell
 
 It allows you to use operator syntax in postfix position (without ".").
 
-``` List(1,2,3) tail ```
+    List(1,2,3) tail
 
 rather than
 
-``` List(1,2,3).tail ```
+    List(1,2,3).tail
+
 In this harmless example it is not a problem, but it can lead to ambiguities. This will not compile:
 
     val appender:List[Int] => List[Int] = List(1,2,3) ::: //add ; here
