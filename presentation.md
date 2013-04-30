@@ -12,6 +12,11 @@ By Jan McSparen and Dominic Fuller-Rowell
    * Making Scala easier for new programmers to learn and use
    * Preventing language features from interacting in unforseen ways (especially as new ones are added over time)
 
+## How it is now
+ * All language features in Scala are available in any environment
+  * People are prone to misuse features they don't fully understand
+  * 
+
 ## Modularize postfixOps
 
 # What functionality does it provide?
