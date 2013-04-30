@@ -174,6 +174,12 @@ Pretty cool right?
 
 # Modularize existentials
 
+# SIP 18: Looking to the Future
+  * This SIP is important to the long term viablilty of Scala
+  * As Scala continues to grow controlling language features will become more and more critical 
+   * SIP 18 preemptively addresses the possible problems related to new users, improper feature use, and unexpected feature interaction
+  * As time goes on critics (there are many) will realize that without the adoption of this SIP 18 Scala would become hard to use and eventually stagnate
+
 # Works-Cited
 
 * [1] http://stackoverflow.com/questions/13011204/scalas-postfix-ops
