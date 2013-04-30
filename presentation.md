@@ -1,20 +1,39 @@
-SIP-18: Modularizing Language Features
-======================================
+## SIP-18: Modularizing Language Features
 
-Modularize postfixOps
-=====================
+By Jan McSparen and Dominic Fuller-Rowell
 
 
+## Modularize postfixOps
 
-Modularize reflectiveCalls
-===========================
+What functionality does it provide?
+-----------------------------------
 
-Modularize implicitConversions
-===========================
+It allows you to use operator syntax in postfix position (without ".").
 
-Modularize higherKinds
-===========================
+'''List(1,2,3) tail
 
-Modularize existentials
-===========================
+rather than
+
+''''List(1,2,3).tail
+
+## Modularize postfixOps
+
+
+Why should postfixOps be modular?
+---------------------------------
+
+
+
+
+## Modularize reflectiveCalls
+
+
+## Modularize implicitConversions
+
+
+## Modularize higherKinds
+
+
+## Modularize existentials
+
 
