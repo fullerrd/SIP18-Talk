@@ -83,7 +83,7 @@ By Jan McSparen and Dominic Fuller-Rowell
 
 # Modularize postfixOps
 
-## What functionality does it provide?
+## What functionality does postfixOps provide?
 
 It allows you to use operator syntax in postfix position (without ".").
 
