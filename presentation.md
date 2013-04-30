@@ -173,6 +173,9 @@ Pretty cool right?
 * These consepts tend to puzzle new-comers
 
 # Modularize existentials
+
+## What functionality do existential types provide?
+
 ```def doStuff(arg : Array[T forSome { type T <: Foo }]) = stuff; ```
 
 * This uses Scala's existential types to specify that there's an unknown type for which this holds true. 
