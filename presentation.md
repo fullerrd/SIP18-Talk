@@ -131,12 +131,11 @@ It tries to call the ::: method on the result of the foreach call, which is of t
     }
     }
 
-Now we can multiply strings with the cunning use of Implicit Conversions!
 
     val repeated = (new StringRepeated("nice")) * 3
     // == "nicenicenice"    
 
-Pretty cool right?
+Now we can multiply strings with the cunning use of Implicit Conversions! Pretty cool right?
 
 [3]
 
