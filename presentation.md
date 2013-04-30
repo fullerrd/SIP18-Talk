@@ -38,14 +38,14 @@ By Jan McSparen and Dominic Fuller-Rowell
   * Enable advanced/contentious language features explicitly using an import from a new language enumeration object [2]        
 
      object languageFeature {  
-     trait dynamics  
-     trait postfixOps  
-     trait reflectiveCalls  
-     trait implicitConversions  
-     trait higherKinds  
-     trait existentials  
-     object experimental {  
-        trait macros  
+       trait dynamics  
+       trait postfixOps  
+       trait reflectiveCalls  
+       trait implicitConversions  
+       trait higherKinds  
+       trait existentials  
+       object experimental {  
+          trait macros  
        }  
      }
 
@@ -53,17 +53,17 @@ By Jan McSparen and Dominic Fuller-Rowell
  * There is also an object called language in Scala that contains implicit feature values:
 
     object language {  
-    import languageFeature._   
-    implicit val macros: macros = _  
-    implicit val dynamics: dynamics = _   
-    implicit val postfixOps: postfixOps = _   
-    implicit val reflectiveCalls: reflectiveCalls = _  
-    implicit val implicitConversions: implicitConversions = _  
-    implicit val higherKinds: higherKinds = _  
-    implicit val existentials: existentials = _  
-    object experimental {
-      implicit val macros: macros = _
-    }  
+      import languageFeature._   
+      implicit val macros: macros = _  
+      implicit val dynamics: dynamics = _   
+      implicit val postfixOps: postfixOps = _   
+      implicit val reflectiveCalls: reflectiveCalls = _  
+      implicit val implicitConversions: implicitConversions = _  
+      implicit val higherKinds: higherKinds = _  
+      implicit val existentials: existentials = _  
+      object experimental {
+        implicit val macros: macros = _
+      }  
     }
 
 ## Specification: What it looks like (3)
