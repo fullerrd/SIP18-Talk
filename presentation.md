@@ -79,7 +79,9 @@ Pretty cool right?
 
 # Why should implicitConversions be modular?
 
+* "Implicit conversions are known to cause many pitfalls if overused. And we have noted a tendency to overuse them because they look very powerful and their effects seem to be easy to understand."
 
+* "Also, in most situations using implicit parameters leads to a better design than implicit conversions."
 
 ## Modularize higherKinds
 
@@ -89,6 +91,7 @@ Pretty cool right?
 ## Works-Cited
 
 [1] http://stackoverflow.com/questions/13011204/scalas-postfix-ops
-[2] 
+[2] http://docs.scala-lang.org/sips/pending/modularizing-language-features.html
+[3] http://scalada.blogspot.com/2008/03/implicit-conversions-magical-and.html
 
 
