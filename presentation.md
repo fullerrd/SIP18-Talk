@@ -28,12 +28,26 @@ By Jan McSparen and Dominic Fuller-Rowell
   [5]
 
 
-## SIP 18: Looking to the Future (may not want/need this slide)
- * Will require developers to explicitly include the language features they want to use
-  * Will improve performance as only necessary features will be included
-  * Will factilitate providing better guidance because features will be organized into standardized packages
-  * Will improve quality of error messages because they can be more specific to features actually being used
-
+## SIP 18: The Big Idea
+ * Will require developers to explicitly include the language features they want to use 
+ * This is not a new idea as there are other languages that require something very similar
+  * In C it looks like: ``` #include <path-spec> ```
+  * In Java it looks like: ``` import package.class ```
+ 
+## Specification: What it looks like
+  * Enable advanced/contentious language features explicitly using an import from a new language enumeration object [2]
+  ``` object languageFeature {
+     trait dynamics 
+     trait postfixOps 
+     trait reflectiveCalls
+     trait implicitConversions 
+     trait higherKinds 
+     trait existentials
+     object experimental {
+       trait macros
+    }
+  }
+```
 ## Modularize postfixOps
 
 # What functionality does it provide?
@@ -97,10 +111,8 @@ Pretty cool right?
 # Why should implicitConversions be modular?
 
 * "Implicit conversions are known to cause many pitfalls if overused. And we have noted a tendency to overuse them because they look very powerful and their effects seem to be easy to understand."
-* For example, the compiler doesn't tell you if you attempt to multiply two objects of different types and instead "just sings logically incorrect bytecode."
 
 * "Also, in most situations using implicit parameters leads to a better design than implicit conversions."
-
 
 ## Modularize higherKinds
 
