@@ -145,10 +145,24 @@ Pretty cool right?
 
 * "Implicit conversions are known to cause many pitfalls if overused. And we have noted a tendency to overuse them because they look very powerful and their effects seem to be easy to understand."
 
+* For example, the compiler doesn't tell you if you attempt to multiply two objects of different types and instead the script "just sings logically incorrect bytecode." 
+
 * "Also, in most situations using implicit parameters leads to a better design than implicit conversions."
 
-## Modularize higherKinds
+[3]
 
+## Modularize higherKinds
+# What functionality does higherKinds provide?
+
+* higherKinds allow for the abstraction of types that are themselves abstracted.
+
+                           proper    first-order           higher-order
+
+        values             10        (x: Int) => x         (f: (Int => Int)) => f(10)
+        types (classes)    String    List                  Functors and Monads
+        
+* This is refered to as higer-order abstraction.
+* 
 
 ## Modularize existentials
 
