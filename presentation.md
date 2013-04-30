@@ -154,10 +154,10 @@ Pretty cool right?
 
 * higherKinds allow for the abstraction of types that are themselves abstract.
 
-                           proper    first-order           higher-order
+                  first-order           higher-order
 
-        values             10        (x: Int) => x         (f: (Int => Int)) => f(10)
-        types (classes)    String    List                  Functors and Monads
+        values    (x: Int) => x         (f: (Int => Int)) => f(10)
+        types     List                  Functors and Monads
         
 * Abstraction over types do not loose their ability to be abstrated over in languages that support higer-order abstraction.
 
