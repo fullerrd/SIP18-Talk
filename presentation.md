@@ -24,6 +24,7 @@ By Jan McSparen and Dominic Fuller-Rowell
   * Providing an alternative mechanism for turning on and off compiler features (as opposed to the current use of compiler options)
   * Adding a low boundary to the use of potentially problematic features to discourage their unnecessary use by library developers
   [5]
+
 # Aims of SIP 18 (2)
   * Modularising language features to enable them to be turned off or substituted to support platform/deployment needs or to facilitate development of alternative implementations of these features
   * Providing a mechanism to warn all developers of the use of certain potentially problematic features
