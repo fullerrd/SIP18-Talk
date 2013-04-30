@@ -5,8 +5,8 @@ By Jan McSparen and Dominic Fuller-Rowell
 
 ## Modularize postfixOps
 
-What functionality does it provide?
------------------------------------
+# What functionality does it provide?
+
 
 It allows you to use operator syntax in postfix position (without ".").
 
@@ -18,9 +18,7 @@ rather than
 
 ## Modularize postfixOps
 
-
-Why should postfixOps be modular?
----------------------------------
+# Why should postfixOps be modular?
 
 
 
