@@ -154,14 +154,14 @@ Pretty cool right?
 ## Modularize higherKinds
 # What functionality does higherKinds provide?
 
-* higherKinds allow for the abstraction of types that are themselves abstracted.
+* higherKinds allow for the abstraction of types that are themselves abstract.
 
                            proper    first-order           higher-order
 
         values             10        (x: Int) => x         (f: (Int => Int)) => f(10)
         types (classes)    String    List                  Functors and Monads
         
-* This is refered to as higer-order abstraction.
+* Abstraction over types do not loose their ability to be abstrated over in languages that support higer-order abstraction.
 * 
 
 ## Modularize existentials
