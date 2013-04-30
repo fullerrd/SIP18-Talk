@@ -97,8 +97,10 @@ Pretty cool right?
 # Why should implicitConversions be modular?
 
 * "Implicit conversions are known to cause many pitfalls if overused. And we have noted a tendency to overuse them because they look very powerful and their effects seem to be easy to understand."
+* For example, the compiler doesn't tell you if you attempt to multiply two objects of different types and instead "just sings logically incorrect bytecode."
 
 * "Also, in most situations using implicit parameters leads to a better design than implicit conversions."
+
 
 ## Modularize higherKinds
 
