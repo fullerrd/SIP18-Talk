@@ -189,7 +189,9 @@ Pretty cool right?
 
 [7]
 # Modularize existentials
+
 ## Why should existentials be modular?
+
 * Complex existential types can easily produce type errors.
 * This is due to the abstract nature of existential typing.
 * Misuse of existential types can result in “obscure error messages. Therefore, going overboard with existential types is generally perceived not to be a good idea.”
