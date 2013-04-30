@@ -34,20 +34,49 @@ By Jan McSparen and Dominic Fuller-Rowell
   * In C it looks like: ``` #include <path-spec> ```
   * In Java it looks like: ``` import package.class ```
  
-## Specification: What it looks like
-  * Enable advanced/contentious language features explicitly using an import from a new language enumeration object [2]
-  ``` object languageFeature {
-     trait dynamics 
-     trait postfixOps 
-     trait reflectiveCalls
-     trait implicitConversions 
-     trait higherKinds 
-     trait existentials
-     object experimental {
-       trait macros
-    }
+## Specification: What it looks like (1)
+  * Enable advanced/contentious language features explicitly using an import from a new language enumeration object [2]        
+
+     object languageFeature {  
+     trait dynamics  
+     trait postfixOps  
+     trait reflectiveCalls  
+     trait implicitConversions  
+     trait higherKinds  
+     trait existentials  
+     object experimental {  
+        trait macros  
+       }  
+     }
+
+## Specification: What it looks like (2)
+ * There is also an object called language in Scala that contains implicit feature values:
+
+    object language {  
+    import languageFeature._   
+    implicit val macros: macros = _  
+    implicit val dynamics: dynamics = _   
+    implicit val postfixOps: postfixOps = _   
+    implicit val reflectiveCalls: reflectiveCalls = _  
+    implicit val implicitConversions: implicitConversions = _  
+    implicit val higherKinds: higherKinds = _  
+    implicit val existentials: existentials = _  
+    object experimental {
+      implicit val macros: macros = _
+    }  
   }
-```
+
+## Specification: What it looks like (3)
+ * The types in the languageFeature object are called feature flags
+  * Each controls a set of features in Scala
+ * To enable a feature an implicit value of the feature type must be available.  
+ * This occurs with a named import from the language object:
+
+    import language.experimental.macros  
+  or  
+    import language.{reflectiveCalls, existentials}
+    
+
 ## Modularize postfixOps
 
 # What functionality does it provide?
