@@ -185,8 +185,8 @@ Now we can multiply strings with the cunning use of Implicit Conversions! Pretty
 ```def doStuff(arg : Array[T forSome { type T <: Comparable[T]}]) = stuff;```
 * You can express more complicated type relationships than in Java (using wildcards).
 *  “Existential types [are] … allowed in inferred types of values or return types of methods.”
-
 [7]
+
 # Modularize existentials
 
 ## Why should existentials be modular?
